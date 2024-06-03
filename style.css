@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+}
+body{
+    background-color: #001;
+    display: flex;
+}
+.image{
+    overflow: hidden;
+     height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: white 2px solid;
+    flex-shrink: 0;  
+}
+.image img{
+    width: 100% ;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.profile{
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.menu{
+    background-color: #123;
+    width: 60px;
+    height: 100vh;
+    padding: 20px;
+    min-height: fit-content;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.menu:hover{
+    width: 260px;
+}
+ul{
+    list-style: none;
+    position: relative;
+    height: 95%;
+    
+}
+ul li a:hover, .dashboard, td:hover{
+    background-color: #ffffff55;
+    border-radius: 8px;
+    transform: scale(1.02) 
+}
+ul li a{
+    display: block; 
+    text-decoration: none;
+    margin: 10px 0px;
+    padding: 10px ;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: 0.5s;
+}
+
+
+.log-out{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.log-out a{
+    background-color: #5dd28e;
+}
+ul li a i{
+    font-size: 30px;
+}
+ul li a p{
+    font-size: 20px;
+}
+.content{
+    
+    margin: 10px;
+    width: 100%;
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #157efb;
+    padding: 20px;
+    border-radius: 8px;
+    margin:5px 0px;
+}
+.title i{
+    font-size: 20px;
+}
+.title p{
+    font-size: 18px;
+}
+.data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+.data .box{
+    display: flex;
+    background-color: #5dd28e;
+    padding: 30px;
+    flex-grow: 1;
+    height: 150px;
+    flex-basis: 150px;
+    border-radius: 8px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.data .box i{
+    font-size: 30px;
+}
+.data .box .info {
+    text-align: center;
+}
+.data .box .info span{
+    font-size: 30px;
+}
+.data .box:hover{
+    background-color: #26a474;
+}
+.table table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 5px;
+}
+th,td{
+    background-color: #123;
+    height: 40px;
+    border-radius: 8px;
+}
+th{
+     background-color: #5dd28e;
+    font-size: 20px;
+}
